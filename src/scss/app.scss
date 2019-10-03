@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4 {
+    color: #00b3aa;
+}
+
+a {
+    color: #b35f00;
+}
+
+#app {
+    width: 70%;
+    margin: 0 auto;
+    padding: 64px 0;
+
+    font-family: 'Merriweather', serif;
+
+    .section {
+        &:not(:last-child) {
+            margin-bottom: 64px;
+        }
+    }
+
+    #site-header {
+        #me {
+            width: 150px;
+            border-radius: 75px;
+        }
+        #site-title {
+            margin-top: 8px;
+            font-size: 3em;
+            margin-bottom: 0;
+        }
+
+        #who-am-i {
+            font-size: 1.5em;
+        }
+    }
+
+    #skills {
+        #skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    #projects {
+        #projects-list {
+
+            .project {
+                margin-bottom: 32px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+
+                .image {
+                    width: 250px;
+                    height: 150px;
+                    overflow: hidden;
+                    background: grey;
+                    box-shadow: 0px 0px 2px #484848;
+                    margin-right: 16px;
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .info {
+                    .name {
+                        margin-top: 0;
+                    }
+                .links {
+                    a {
+                        &:not(:last-child) {
+                            border-right: solid 1px #484848;
+                            padding-right: 8px;
+                        }
+
+                        &:not(:first-child) {
+                            padding-left: 8px;
+                        }
+                    }
+                }
+                .stack {
+                    margin-top: 16px;
+                }
+                }
+            }
+        }
+    }
+}
