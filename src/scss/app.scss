@@ -136,6 +136,13 @@ h6 {
       animation-iteration-count: infinite;
       animation-direction: alternate-reverse;
     }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+        text-align: center;
+      }
+    }
   }
 }
 
@@ -145,6 +152,10 @@ h6 {
 
 .container {
   padding: $space-8;
+
+  @media (max-width: 600px) {
+    padding: $space-2;
+  }
 }
 
 #skills {
@@ -157,7 +168,7 @@ h6 {
     flex-wrap: wrap;
 
     div {
-      flex: 1 1 auto;
+      flex: 1 1 25%;
 
       ul {
         list-style: none;
